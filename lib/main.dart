@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'Presentation/Screen/home_screen.dart';
 
 main(){
-  runApp(MyApp());
+  runApp(MyApp(),);
 }
 
 class MyApp extends StatelessWidget{
@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget{
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: HomeActivity(),
     );

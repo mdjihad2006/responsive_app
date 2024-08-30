@@ -11,46 +11,33 @@ class NavMenu extends StatelessWidget {
       child: SafeArea(
         child: Column(
           children: [
-            ListTile(
-              title: Text('Home'),
-              leading: Icon(Icons.account_circle),
-            ),
-            SizedBox(
-              height: 2,
-            ),
-            ListTile(
-              title: Text('Home'),
-              tileColor: Colors.deepPurpleAccent,
-              leading: Icon(Icons.account_circle),
-            ),
-            SizedBox(
-              height: 2,
-            ),
-            ListTile(
-              title: Text('Home'),
-              leading: Icon(Icons.account_circle),
-            ),
-            SizedBox(
-              height: 2,
-            ),
-            ListTile(
-              title: Text('Home'),
-              leading: Icon(Icons.account_circle),
-            ),
-            SizedBox(
-              height: 2,
-            ),
-            ListTile(
-              title: Text('Home'),
-              leading: Icon(Icons.account_circle),
-            ),
-            SizedBox(
-              height: 2,
-            ),
-            ListTile(
-              title: Text('Home'),
-              leading: Icon(Icons.account_circle),
+            DrawerHeader(
+              padding: EdgeInsets.zero,
+            child: Container(
+              color: Colors.greenAccent,
+              child: const Center(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text('SKILL UP NOW',style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),),
+                    Text('lets start')
+                  ],
+                ),
+              ),
             )
+            ),
+            const ListTile(
+              title: Text('Episodes'),
+              leading: Icon(Icons.featured_play_list),
+            ),
+            const SizedBox(height: 3,),
+            const ListTile(
+              title: Text('About'),
+              leading: Icon(Icons.messenger),
+            ),
           ],
         ),
       ),
